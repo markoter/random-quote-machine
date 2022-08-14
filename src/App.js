@@ -10,6 +10,9 @@ class App extends React.Component {
         const rndNum = Math.floor(Math.random() * quotesAmmount)
         this.setState({quoteNumberRandom: rndNum})
     } 
+    componentDidMount() {
+        this.selectRandomQuote()
+    }
     render() {
         const {quoteNumberRandom} = this.state
         return (<div id="app-container">
