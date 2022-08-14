@@ -14,7 +14,7 @@ class App extends React.Component {
         const {quoteNumberRandom} = this.state
         return (<div id="app-container">
             <p>this is app, numberTest: {quoteNumberRandom}</p>
-            <QuoteBox quoteNumber={quoteNumberRandom}/>
+            <QuoteBox quoteNumber={quoteNumberRandom} selectRandomQuote={this.selectRandomQuote}/>
         </div>
         )
     }
