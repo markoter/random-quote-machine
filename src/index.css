@@ -13,12 +13,13 @@ body {
   border: 2px solid black;
   padding: 40px 40px;
 }
-
 #quote-box #text {
   background-color: beige;
 }
-
 #quote-box #author {
   justify-self: right;
 }
-/*# sourceMappingURL=index.css.map */
+
+#header {
+  background-color: blue;
+}/*# sourceMappingURL=index.css.map */
