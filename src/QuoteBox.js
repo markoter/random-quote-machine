@@ -5,7 +5,7 @@ const QuoteBox = (props) => {
     const { quoteNumber } = props
     const quoteText = quotesList[quoteNumber].quote
     const quoteAuthor = quotesList[quoteNumber].author
-    const encodedForTwitter = encodeURIComponent(quoteText)
+    const encodedForTwitter = encodeURIComponent('"' + quoteText + '"\n-' + quoteAuthor)
     return (
         <div id="quote-box">
             <div id="text">{quoteText}</div>
