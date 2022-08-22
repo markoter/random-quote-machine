@@ -9,6 +9,7 @@
 }
 
 body {
+    font-family: 'Philosopher', sans-serif;
     background: var(--background-color-1);
     background: linear-gradient(90deg, var(--background-color-1) 0%, var(--background-color-2) 100%);
     display: flex;
@@ -18,6 +19,7 @@ body {
 
 #quote-box {
     font-size: 2em;
+    font-style: italic;
     text-align: start;
     width: 70vw;
     height: auto;
@@ -35,6 +37,8 @@ body {
     }
 
     .button {
+        font-family: inherit;
+        font-style: normal;
         background-color: var(--main-color);
         border: none;
         color: white;
@@ -49,6 +53,7 @@ body {
 
 #header {
     font-size: 2em;
+    font-weight: 700; //doesn't work, don't know why yet
     position: absolute;
     background-color: var(--main-color);
     color: var(--secondary-color);
