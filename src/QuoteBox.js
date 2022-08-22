@@ -10,8 +10,8 @@ const QuoteBox = (props) => {
         <div id="quote-box">
             <div id="text">{quoteText}</div>
             <div id="author">{quoteAuthor}</div>
-            <button id="new-quote" onClick={() => props.selectRandomQuote()}>New Quote</button>
-            <a href={`https://twitter.com/intent/tweet?text=${encodedForTwitter}`} target="_blank" id="tweet-quote">Tweet</a>
+            <button className="button" id="new-quote" onClick={() => props.selectRandomQuote()}>New Quote</button>
+            <a href={`https://twitter.com/intent/tweet?text=${encodedForTwitter}`} target="_blank" id="tweet-quote" className="button">Tweet</a>
         </div>
     )
 }
